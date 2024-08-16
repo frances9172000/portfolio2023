@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import Loader from "./Loader";
 
-export default function Gallery({ img, title, alt }) {
+export default function Gallery({ img, title, alt, link = "#" }) {
   return (
     <div className="px-5 py-2">
       <div className="flex">
-        <Link
-          href={"#"}
+        <a
+          href={`//${link}`}
           className="group w-[270px] h-[170px] block relative flex-shrink-0"
         >
           <div>
@@ -20,7 +20,7 @@ export default function Gallery({ img, title, alt }) {
           </div>
           <div className="h-full border-2 border-[var(--primary)] dark:border-white w-full absolute top-0 z-[5] transition-all group-hover:-translate-x-2 group-hover:-translate-y-2"></div>
           <div className="h-full w-full border-2 border-[var(--primary)] dark:border-white absolute top-0 z-[1]"></div>
-        </Link>
+        </a>
       </div>
       <div className="flex text-slate-400 bg-[var(--dark)] text-sm">
         <Link href={"#"} className="p-3">

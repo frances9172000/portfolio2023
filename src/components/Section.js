@@ -27,7 +27,10 @@ export default function Section({ setInView }) {
             title={"About Me"}
           />
           <div className="block md:flex items-center">
-            <div ref={avatar} className="group mx-auto my-5 md:h-[300px] h-[300px] w-[300px] shrink-0 md:mr-5 relative">
+            <div
+              ref={avatar}
+              className="group mx-auto my-5 md:h-[300px] h-[300px] w-[300px] shrink-0 md:mr-5 relative"
+            >
               <Image
                 alt="avatar"
                 src={Avatar}
@@ -44,16 +47,16 @@ export default function Section({ setInView }) {
               />
             </div>
             <p className="text-justify dark:text-slate-300 text-md">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius at
-              est omnis, esse quo pariatur quod laborum officiis voluptates
-              aliquam, animi exercitationem enim ut! Nam optio rerum consequatur
-              quaerat dolorum, numquam enim quasi, harum culpa, et eum possimus
-              dolores esse ratione atque accusantium similique repellendus!
-              Consectetur cum quos ullam? Asperiores fuga sequi iure rem,
-              molestiae, dignissimos voluptates facilis, temporibus nam modi
-              consequuntur amet quaerat beatae deleniti incidunt fugiat quos
-              quas vel? Dolor adipisci perferendis, fuga explicabo ea totam
-              dicta ad.
+              Oh hello there! I'm Frances M. Gonzales your Web Developer,
+              Graphic Designer, and Economist at your service. I started web
+              developing when I'm only at 17 years old with a shitty computer
+              which can only run a notepad HTML and javascript codes. With this,
+              I harness the power of sticks and stones to create a beautiful and
+              attactive UI with the help of my graphic designing and web
+              developing knowledge. But wait there's more, being attractive
+              won't be helpful without fuctionality and accessibilty, so I also
+              focuses on creating the best UX out there to sufice client's
+              needs. You can check more from me by scrolling down. Thank you!
             </p>
           </div>
         </div>
@@ -76,7 +79,7 @@ export default function Section({ setInView }) {
               <Button icons={"fa fa-code-branch"}>Web Development</Button>
               <Button icons={"fa fa-bezier-curve"}>Graphic Design</Button>
               <Button icons={"fa fa-graduation-cap"}>Education</Button>
-              <Button icons={"fa-solid fa-heart"}>Other Skills</Button>
+              {/* <Button icons={"fa-solid fa-heart"}>Other Skills</Button> */}
             </Controls>
             <Wrapper>
               <Content active={true}>
@@ -84,37 +87,29 @@ export default function Section({ setInView }) {
                   <i className="fa fa-chart-line"></i> Economist
                 </h1>
                 <div className="text-center">
-                  <i className="fa-brands fa-html5 color-change anim-delay-3"></i>
-                  <i className="fa-brands fa-css3-alt color-change anim-delay-4"></i>
-                  <i className="fa-brands fa-js-square color-change anim-delay-5"></i>
+                  <i className="fas fa-hand-holding-usd color-change anim-delay-3"></i>
+                  <i className="fa fa-money-bill color-change anim-delay-4"></i>
+                  <i className="fa fa-book color-change anim-delay-5"></i>
                 </div>
-                <div className="fade-in anim-delay-8">
+                <h1 className="text-lg text-[var(--secondary)] my-5 text-center">
+                  Wait, how come your an Economics degree holder but also
+                  knowledgeable about web developing and designing?
+                </h1>
+                <div className="fade-in anim-delay-6">
                   <p className="indent-10">
-                    <span className="text-lg text-[var(--secondary)]">
-                      Unlock the Secrets to Crafting Stunning Websites: Harness
-                      the Power of HTML, CSS3, and Vanilla JavaScript!
-                    </span>{" "}
                     <span className="text-sm">
-                      With 5 years of hands-on experience, these three tools
-                      have been my trusty companions in bringing my wildest web
-                      development dreams to life. But wait, there's more! I also
-                      rely on cutting-edge front-end libraries and frameworks to
-                      take my skills to the next level. These are some of the
-                      awesome tools I use in my projects:
+                      Well, let's just say I'm into tech. I'm a graduate of
+                      Economics program at Partido State University, Goa,
+                      Camarines Sur, Philippines but with knowledge at web
+                      developing and graphic designing. You see, I started web
+                      developing when I'm at senior high school but fate decided
+                      to put me off-track - out of plan. I decided to continue
+                      what fate given me and fortunately love it! Right now my
+                      interests are on technologies and social science. It's
+                      kind of hard to let go of your first love for what you
+                      love currently, so I decided to not leave any behind.
                     </span>
                   </p>
-                  <div className="text-sm flex justify-evenly mt-5">
-                    <ul>
-                      <li>- Bootsrap</li>
-                      <li>- Jquery</li>
-                      <li>- React</li>
-                    </ul>
-                    <ul>
-                      <li>- Tailwind</li>
-                      <li>- Materialize</li>
-                      <li>- Sass</li>
-                    </ul>
-                  </div>
                 </div>
               </Content>
               <Content>
@@ -122,24 +117,27 @@ export default function Section({ setInView }) {
                   <i className="fa fa-code-branch"></i> Web Developer
                 </h1>
                 <div className="text-center">
-                  <i className="fa-brands fa-node-js color-change anim-delay-3"></i>
-                  <i className="fa-brands fa-php color-change anim-delay-4"></i>
-                  <i className="fas fa-database color-change anim-delay-5"></i>
+                  <i className="fab fa-html5 color-change anim-delay-3"></i>
+                  <i className="fab fa-css3 color-change anim-delay-4"></i>
+                  <i className="fa-brands fa-node-js color-change anim-delay-5"></i>
                 </div>
-                <p className="indent-10 fade-in anim-delay-8">
-                  Welcome to [Your Name]'s portfolio, where you'll discover the
-                  work of a talented backend developer with a passion for
-                  Node.js and PHP. With expertise in both technologies, [Your
-                  Name] has created a variety of robust and scalable web
-                  applications, from APIs and database management systems to
-                  high-performance server infrastructure. [Your Name]'s clean
-                  and efficient code is designed to deliver exceptional results,
-                  and clients have consistently praised [Your Name] for their
-                  ability to build powerful backend systems that drive business
-                  growth. If you're looking for a backend developer who can
-                  create web solutions that perform at the highest level, look
-                  no further than [Your Name]. Check out their portfolio to see
-                  their exceptional work in action!
+                <h1 className="text-lg text-[var(--secondary)] my-5 text-center">
+                  Can you give us a detail about being aweb developer for fun?
+                </h1>
+                <p className="indent-10 fade-in anim-delay-6">
+                  As a web developer I am knowlegeable of creating an either
+                  Full-Stack and Front-End web pages. I used HTML, Javascript,
+                  and CSS in harmony to create a responsive and compatible web
+                  pages. To make it easier, some of the front-end frameworks and
+                  libraries I used are Bootstrap, Materialize, JQuery, ReactJS,
+                  Tailwind, and Sass. For backend, I used nodeJS and Express JS.
+                  I also on track of learning PHP and Typescript for a flexible
+                  coding. Additionally, NextJS is also on my list for full-stack
+                  web develolopment like my Portfolio, oh right Laravel also.
+                  Right now I'm only at web developing freelancing/part-time and
+                  hope to gain clients and try my service for a level up web
+                  developing. Feel free to check my personal projects below,
+                  handcrafted by yours truly.
                 </p>
               </Content>
               <Content>
@@ -147,22 +145,26 @@ export default function Section({ setInView }) {
                   <i className="fa fa-bezier-curve"></i> Graphic Designer
                 </h1>
                 <div className="text-center">
-                  <i className="fa-brands fa-node-js color-change anim-delay-3"></i>
-                  <i className="fa-brands fa-react color-change anim-delay-4"></i>
-                  <i className="fa-brands fa-laravel color-change anim-delay-5"></i>
+                  <i className="fa-solid fa-paintbrush color-change anim-delay-3"></i>
+                  <i className="fa-solid fa-fill-drip color-change anim-delay-4"></i>
+                  <i className="fa-solid fa-palette color-change anim-delay-5"></i>
                 </div>
-                <p className="indent-10 fade-in anim-delay-8">
-                  <span className="text-lg text-[var(--secondary)]">
-                    Unlock the Secrets to Crafting Stunning Websites: Harness
-                    the Power of HTML, CSS3, and Vanilla JavaScript!
-                  </span>{" "}
+                <h1 className="text-lg text-[var(--secondary)] text-center my-5">
+                  Graphic Designing? No worries, I got your site
+                </h1>
+                <p className="indent-10 fade-in anim-delay-6">
                   <span className="text-sm">
-                    With 3 years of hands-on experience, these three tools have
-                    been my trusty companions in bringing my wildest web
-                    development dreams to life. But wait, there's more! I also
-                    rely on cutting-edge front-end libraries and frameworks to
-                    take my skills to the next level. These are some of the
-                    awesome tools I use in my projects:
+                    I also do graphic designing which I integrate on my web
+                    pages. I'm into graphic designing and have experienced
+                    designing for 2 years at one of Naga City, Philippine's
+                    successful review center, Asiawise Study Center, Inc. Aside
+                    from that, I also accept various clients which ask for
+                    designing for free or with payment. Some of my works in
+                    graphic designing includes, logo creation, layout for
+                    prinatbles such as tarpauline, brochures, and pamphlets, and
+                    social media posters. I usually used Photoshop and
+                    Illustrator for my works. You can check out my projects
+                    below.
                   </span>
                 </p>
               </Content>
@@ -171,30 +173,30 @@ export default function Section({ setInView }) {
                   <i className="fa fa-graduation-cap"></i> Educator
                 </h1>
                 <div className="text-center">
-                  <i className="fa-brands fa-node-js color-change anim-delay-3"></i>
-                  <i className="fa-brands fa-react color-change anim-delay-4"></i>
-                  <i className="fa-brands fa-laravel color-change anim-delay-5"></i>
+                  <i className="fa-solid fa-chalkboard-user color-change anim-delay-3"></i>
+                  <i className="fa-solid fa-user-graduate color-change anim-delay-4"></i>
+                  <i className="fa-solid fa-award color-change anim-delay-5"></i>
                 </div>
+                <h1 className="text-lg text-[var(--secondary)] text-center my-5">
+                  Wait, your also an Educator?
+                </h1>
                 <p className="indent-10 fade-in anim-delay-8">
-                  <span className="text-lg text-[var(--secondary)]">
-                    Unlock the Secrets to Crafting Stunning Websites: Harness
-                    the Power of HTML, CSS3, and Vanilla JavaScript!
-                  </span>{" "}
-                  With 3 years of hands-on experience, these three tools have
-                  been my trusty companions in bringing my wildest web
-                  development dreams to life. But wait, there's more! I also
-                  rely on cutting-edge front-end libraries and frameworks to
-                  take my skills to the next level. These are some of the
-                  awesome tools I use in my projects:
+                  Yes! I also do tutorials on Science and Mathematics with
+                  subjects ranging from interediate levels to senior high
+                  school. Maybe I'll add web developing on this if someone
+                  avail. I do online tutorials and face-to-face tutorials.
                 </p>
               </Content>
-              <Content>
+              {/* <Content>
                 {" "}
                 <h1 className="text-2xl text-center md:text-left md:text-3xl mt-5 md:mt-0 drawer-content-title fade-in dark:text-white">
                   <i className="fa fa-heart"></i> Other Skills
                 </h1>
                 <div className="text-center">
-                  <i className="fa-brands fa-node-js color-change anim-delay-3"></i>
+                  <i
+                    classNam
+                    e="fa-brands fa-node-js color-change anim-delay-3"
+                  ></i>
                   <i className="fa-brands fa-react color-change anim-delay-4"></i>
                   <i className="fa-brands fa-laravel color-change anim-delay-5"></i>
                 </div>
@@ -210,7 +212,7 @@ export default function Section({ setInView }) {
                   take my skills to the next level. These are some of the
                   awesome tools I use in my projects:
                 </p>
-              </Content>
+              </Content> */}
             </Wrapper>
           </Drawer>
         </div>
@@ -248,6 +250,7 @@ export default function Section({ setInView }) {
                   title={"Portfolio1"}
                   img={e}
                   key={i}
+                  link={"www.facebook.com"}
                 />
               );
             })}
