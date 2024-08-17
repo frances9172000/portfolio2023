@@ -5,14 +5,11 @@ import Image from "next/image";
 import { useInView } from "framer-motion";
 
 export default function Focus() {
-
   return (
     <div className="md:flex flex-wrap justify-evenly">
       <div className="card w-full md:w-[250px] my-3 mx-auto justify-between text-slate-400 text-sm text-center ">
         <div className="bg-[var(--secondary)] p-5 h-full">
-          <div className="h-[200px] p-4">
-            <Image alt="responsive icon" src={ResponsiveIcon} />
-          </div>
+          <Image alt="responsive icon" src={ResponsiveIcon} className="p-4" />
           <h1 className="mb-3 text-2xl text-[var(--secondary)]">
             Responsiveness
           </h1>
@@ -25,9 +22,7 @@ export default function Focus() {
 
       <div className="card w-full md:w-[250px] my-3 mx-auto justify-between text-slate-400 text-sm text-center ">
         <div className="bg-[var(--secondary)] p-5 h-full">
-          <div className="h-[200px] p-4">
-            <Image alt="responsive icon" src={SimplicityIcon} />
-          </div>
+          <Image alt="responsive icon" src={SimplicityIcon} className="p-4" />
           <h1 className="mb-3 text-2xl text-[var(--secondary)]">Simplicity</h1>
           <p>
             Simplicity for beauty. Simple without any complexity will create
@@ -38,9 +33,7 @@ export default function Focus() {
 
       <div className="card w-full md:w-[250px] my-3 mx-auto justify-between text-slate-400 text-sm text-center">
         <div className="bg-[var(--secondary)] p-5 h-full">
-          <div className="h-[200px] p-4">
-            <Image alt="responsive icon" src={CompatibilityIcon} />
-          </div>
+          <Image alt="responsive icon" src={CompatibilityIcon} className="p-4"/>
           <h1 className="mb-3 text-2xl text-[var(--secondary)]">
             Compatibility
           </h1>
