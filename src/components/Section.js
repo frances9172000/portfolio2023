@@ -1,7 +1,7 @@
 import Subheading from "./Subheading";
 import Heading from "./Heading";
 import { Drawer, Controls, Button, Wrapper, Content } from "./Drawer";
-import Gallery from "./Gallery";
+import LinkCard from "./LinkCard";
 import Projects from "./Projects";
 import Focus from "./Focus";
 import Contacts from "./Contacts";
@@ -10,6 +10,7 @@ import Avatar2 from "../../public/avatar-illustration.png";
 import Image from "next/image";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Gallery from "./Gallery";
 
 export default function Section({ setInView }) {
   const avatar = useRef();
@@ -243,14 +244,14 @@ export default function Section({ setInView }) {
           />
 
           <div className="flex justify-evenly flex-wrap">
-            {Projects.map((e, i) => {
+          {Projects.map((e, i) => {
               return (
-                <Gallery
-                  alt={"Portfolio"}
-                  title={"Portfolio1"}
-                  img={e}
+                <LinkCard
+                  alt={e.name}
+                  title={e.name}
+                  img={e.path}
+                  link={e.link}
                   key={i}
-                  link={"www.facebook.com"}
                 />
               );
             })}
@@ -267,16 +268,7 @@ export default function Section({ setInView }) {
           />
 
           <div className="flex justify-evenly flex-wrap">
-            {Projects.map((e, i) => {
-              return (
-                <Gallery
-                  alt={"Portfolio"}
-                  title={"Portfolio1"}
-                  img={e}
-                  key={i}
-                />
-              );
-            })}
+            <Gallery/>
           </div>
         </div>
       </section>
