@@ -244,12 +244,12 @@ export default function Section({ setInView }) {
           />
 
           <div className="flex justify-evenly flex-wrap">
-          {Projects.map((e, i) => {
+          {Projects.web.map((e, i) => {
               return (
                 <LinkCard
                   alt={e.name}
                   title={e.name}
-                  img={e.path}
+                  img={e.src}
                   link={e.link}
                   key={i}
                 />
