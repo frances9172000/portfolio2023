@@ -254,6 +254,11 @@ body {
   display: none;
 }
 
+.fade-up {
+  transform:translateX(-20%);
+  opacity: 0;
+}
+
 
 
 @keyframes fadeIn {

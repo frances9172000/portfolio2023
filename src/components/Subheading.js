@@ -6,11 +6,14 @@ export default function Subheading({ title, style, icon, setInView, section }) {
   const inView = useInView(elem, { margin: "-90px 0px -90px 0px" });
   const [initRender, setInitRender] = useState(false);
 
+  // This function tracks whether a specific section is in view
+  // Use for the navigation
   function useDidUpdateEffect() {
     useEffect(() => {
       if (initRender) {
-        if(inView) return setInView(section)
+        if (inView) return setInView(section);
       }
+
       setInitRender(true);
     }, [inView]);
   }
