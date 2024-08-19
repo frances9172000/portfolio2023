@@ -9,9 +9,10 @@ export default function Gallery() {
           if (i <= (p.length / 4) * 1 - 1) {
             return (
               <Image
-                className="h-auto max-w-full rounded-lg my-auto"
+                className="h-auto max-w-full my-auto"
                 src={e.src}
                 alt={e.name}
+                key={i}
               />
             );
           }
@@ -22,9 +23,10 @@ export default function Gallery() {
           if (i <= (p.length / 4) * 2 - 1 && i > (p.length / 4) * 1 - 1) {
             return (
               <Image
-                className="h-auto max-w-full rounded-lg my-auto"
+                className="h-auto max-w-full my-auto"
                 src={e.src}
                 alt={e.name}
+                key={i}
               />
             );
           }
@@ -35,9 +37,10 @@ export default function Gallery() {
           if (i <= (p.length / 4) * 3 - 1 && i > (p.length / 4) * 2 - 1) {
             return (
               <Image
-                className="h-auto max-w-full rounded-lg my-auto"
+                className="h-auto max-w-full my-auto"
                 src={e.src}
                 alt={e.name}
+                key={i}
               />
             );
           }
@@ -48,9 +51,10 @@ export default function Gallery() {
           if (i <= (p.length / 4) * 4 - 1 && i > (p.length / 4) * 3 - 1) {
             return (
               <Image
-                className="h-auto max-w-full rounded-lg"
+                className="h-auto max-w-full"
                 src={e.src}
                 alt={e.name}
+                key={i}
               />
             );
           }
