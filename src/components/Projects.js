@@ -1,116 +1,116 @@
-import Web1 from "../../public/webdesigns/design1.PNG";
-import Web2 from "../../public/webdesigns/design2.PNG";
-import Web3 from "../../public/webdesigns/design3.PNG";
-import Web4 from "../../public/webdesigns/design4.PNG";
-import Web5 from "../../public/webdesigns/design5.PNG";
-import Graphic1 from "../../public/graphicdesigns/design1.png";
-import Graphic2 from "../../public/graphicdesigns/design2.png";
-import Graphic3 from "../../public/graphicdesigns/design3.png";
-import Graphic4 from "../../public/graphicdesigns/design4.jpg";
-import Graphic5 from "../../public/graphicdesigns/design5.png";
-import Graphic6 from "../../public/graphicdesigns/design6.png";
-import Graphic7 from "../../public/graphicdesigns/design7.png";
-import Graphic8 from "../../public/graphicdesigns/design8.png";
-import Graphic9 from "../../public/graphicdesigns/design9.png";
-import Graphic10 from "../../public/graphicdesigns/design10.png";
-import Graphic11 from "../../public/graphicdesigns/design11.jpg";
-import Graphic12 from "../../public/graphicdesigns/design12.png";
-import Graphic13 from "../../public/graphicdesigns/design13.png";
-import Graphic14 from "../../public/graphicdesigns/design14.png";
-import Graphic15 from "../../public/graphicdesigns/design15.png";
-import Graphic16 from "../../public/graphicdesigns/design16.png";
+import Portofolio2017 from "../../public/webdesigns/Portfolio2017.png";
+import Portfolio2019 from "../../public/webdesigns/Portfolio2019.png";
+import ShopApp from "../../public/webdesigns/ShopApp.png";
+import PESOPage from "../../public/webdesigns/PESOPage.png";
+import StrawberrySite from "../../public/webdesigns/StrawberrySite.png";
+import Bicol from "../../public/graphicdesigns/Bicol.png";
+import PhilippineIndependence from "../../public/graphicdesigns/PhilippineIndependence.png";
+import EDSA from "../../public/graphicdesigns/EDSA.png";
+import EKONACO from "../../public/graphicdesigns/EKONACO.jpg";
+import CSE from "../../public/graphicdesigns/CSE.png";
+import NationalWomen from "../../public/graphicdesigns/NationalWomen.png";
+import PSU from "../../public/graphicdesigns/PSU.png";
+import LeniKiko from "../../public/graphicdesigns/LeniKiko.png";
+import LeniKikoBorder from "../../public/graphicdesigns/LeniKikoBorder.png";
+import PESOLogo from "../../public/graphicdesigns/PESOLogo.png";
+import Environmental from "../../public/graphicdesigns/Environmental.jpg";
+import VGMO from "../../public/graphicdesigns/VGMO.png";
+import CSE2 from "../../public/graphicdesigns/CSE2.png";
+import Economics from "../../public/graphicdesigns/Economics.png";
+import Covid from "../../public/graphicdesigns/Covid.png";
+import Poster from "../../public/graphicdesigns/Poster.png";
 
 let projects = {
   web: [
     {
-      src: Web1,
+      src: Portofolio2017,
       name: "Portfolio 2017",
       link: "https://portfolio2017.onrender.com",
     },
     {
-      src: Web2,
+      src: Portfolio2019,
       name: "Portfolio 2019",
       link: "https://portfolio2019.onrender.com",
     },
     {
-      src: Web3,
+      src: ShopApp,
       name: "Shop App",
       link: "https://product-tracker-app.vercel.app",
     },
     {
-      src: Web4,
+      src: PESOPage,
       name: "PESO Page Template",
       link: "https://frances9172000.github.io/PesoOfficial/",
     },
     {
-      src: Web5,
+      src: StrawberrySite,
       name: "Strawberry Site",
       link: "https://frances9172000.github.io/strawberry-site/",
     },
   ],
   graphic: [
     {
-      src: Graphic1,
+      src: Bicol,
       name: "Bicol",
     },
     {
-      src: Graphic2,
+      src: PhilippineIndependence,
       name: "Philippine Independence",
     },
     {
-      src: Graphic3,
+      src: EDSA,
       name: "EDSA",
     },
     {
-      src: Graphic4,
+      src: EKONACO,
       name: "EKONACO",
     },
     {
-      src: Graphic5,
+      src: CSE,
       name: "CSE Announcement",
     },
     {
-      src: Graphic6,
+      src: NationalWomen,
       name: "National Women's Month",
     },
     {
-      src: Graphic7,
+      src: PSU,
       name: "PSU Charter",
     },
     {
-      src: Graphic8,
+      src: LeniKiko,
       name: "LeniKiko Ekononomista",
     },
     {
-      src: Graphic9,
+      src: LeniKikoBorder,
       name: "LeniKiko Border",
     },
     {
-      src: Graphic10,
+      src: PESOLogo,
       name: "PESO Logo Sample",
     },
     {
-      src: Graphic11,
+      src: Environmental,
       name: "Environmental Awareness Poster",
     },
     {
-      src: Graphic12,
+      src: VGMO,
       name: "VGMO",
     },
     {
-      src: Graphic13,
+      src: CSE2,
       name: "CSE Announcment",
     },
     {
-      src: Graphic14,
+      src: Economics,
       name: "Economics Program Banner",
     },
     {
-      src: Graphic15,
+      src: Covid,
       name: "Covid Poster",
     },
     {
-      src: Graphic16,
+      src: Poster,
       name: "Proper Usage of Equipment Poster",
     },
   ],
