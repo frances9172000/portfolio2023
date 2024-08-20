@@ -7,6 +7,7 @@ const Sidenav = dynamic(() => import("@/components/Sidenav"));
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import Intro from "@/components/Intro";
+import ImageFull from "@/components/ImageFull";
 
 export default function Home() {
   const [intro, setIntro] = useState(true);
@@ -43,6 +44,16 @@ export default function Home() {
     }
   };
 
+  const [currentImage, setCurrentImage] = useState()
+  const openFullScreen = (src) => {
+    setCurrentImage(src)
+  }
+
+  const [closeImage, setCloseImage] = useState(true)
+  const onCloseImage = () => {
+    setCloseImage(true)
+}
+
   useEffect(() => {
     setMounted(true);
     setTimeout(() => {
@@ -63,6 +74,7 @@ export default function Home() {
   return (
     <>
       {intro ? <Intro /> : ""}
+      <ImageFull currentImage={currentImage} onCloseImage={onCloseImage} closeImage={closeImage}/>
       <Topnav
         home={true}
         openNav={openNav}
@@ -81,7 +93,7 @@ export default function Home() {
       />
       <div className="container px-5">
         <Showcase setInView={setInView} intro={intro} />
-        <Section setInView={setInView} inView={inView} />
+        <Section setInView={setInView} inView={inView} openFullScreen={openFullScreen} setCloseImage={setCloseImage}/>
       </div>
 
       <Footer currentTheme={currentTheme} />

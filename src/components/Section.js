@@ -12,7 +12,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Gallery from "./Gallery";
 
-export default function Section({ setInView }) {
+export default function Section({ setInView, openFullScreen, setCloseImage }) {
   const avatar = useRef();
   const inView = useInView(avatar, { margin: "-300px 0px -300px 0px" });
 
@@ -268,7 +268,7 @@ export default function Section({ setInView }) {
           />
 
           <div className="flex justify-evenly flex-wrap">
-            <Gallery/>
+            <Gallery openFullScreen={openFullScreen} setCloseImage={setCloseImage}/>
           </div>
         </div>
       </section>
