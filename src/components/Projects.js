@@ -50,7 +50,7 @@ let projects = {
   ],
   graphic: [
     {
-      src: Poster,
+      src: Bicol,
       name: "Bicol",
     },
     {
