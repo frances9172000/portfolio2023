@@ -3,8 +3,9 @@ import Image from "next/image";
 
 export default function Gallery({openFullScreen, setCloseImage}) {
 
-  const onClick = (src) => {
-    openFullScreen(src)
+  const onClick = (e) => {
+    openFullScreen(e)
+    console.log(e)
     setCloseImage(false)
   }
 
@@ -19,7 +20,7 @@ export default function Gallery({openFullScreen, setCloseImage}) {
                 src={e.src}
                 alt={e.name}
                 key={i}
-                onClick={function() {onClick(e.src)}}
+                onClick={function() {onClick(e)}}
               />
             );
           }
@@ -34,7 +35,7 @@ export default function Gallery({openFullScreen, setCloseImage}) {
                 src={e.src}
                 alt={e.name}
                 key={i}
-                onClick={function() {onClick(e.src)}}
+                onClick={function() {onClick(e)}}
               />
             );
           }
@@ -49,7 +50,7 @@ export default function Gallery({openFullScreen, setCloseImage}) {
                 src={e.src}
                 alt={e.name}
                 key={i}
-                onClick={function() {onClick(e.src)}}
+                onClick={function() {onClick(e)}}
               />
             );
           }
@@ -64,7 +65,7 @@ export default function Gallery({openFullScreen, setCloseImage}) {
                 src={e.src}
                 alt={e.name}
                 key={i}
-                onClick={function() {onClick(e.src)}}
+                onClick={function() {onClick(e)}}
               />
             );
           }
