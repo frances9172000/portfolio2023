@@ -9,7 +9,7 @@ export default function ImageFull({ currentImage, closeImage, onCloseImage }) {
       } fixed overflow-hidden h-full w-full bg-[var(--secondaryTranslucent)] dark:bg-[var(--primaryTranslucent)] z-50`}
     >
       <div className="flex items-center p-5">
-        <h1 className="md:text-[1.5rem]">{currentImage.name}</h1>
+        <h1 className="md:text-[1.5rem]">{currentImage ? currentImage.name : ""}</h1>
         <button
           className="px-5 text-xl ml-auto block"
           onClick={() => onCloseImage()}

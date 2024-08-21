@@ -2,6 +2,7 @@ import Social from "./Social";
 import { useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function ({ setInView, intro }) {
   const showCase = useRef();
@@ -89,7 +90,7 @@ export default function ({ setInView, intro }) {
               variants={shakeSide}
               className="mx-auto md:ml-[0.2em] mt-3 dark:text-slate-400 text-[1.3rem] py-2 px-3 border-2 dark:border-white border-[var(--primary)] block hover:bg-[var(--secondary)] dark:hover:border-[var(--secondary)] hover:border-[var(--secondary)] dark:hover:text-[var(--primary)] hover:text-[var(--primary)] transition-colors "
             >
-              Let's Get In Touch
+             <Link href="/RESUME.pdf" locale={false}> My CV here <i className="fa-solid fa-download"></i></Link>
             </motion.button>
           </motion.div>
           <Social style={"mt-[100px] md:mt-auto"} />

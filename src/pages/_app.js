@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
           name="description"
           content="portfolio, web development, next.js"
         />
-        <title>FGdev</title>
+        <title>FG Dev | Portfolio</title>
       </Head>
       <ThemeProvider enableSystem={true} attribute="class">
         <Component {...pageProps} />
